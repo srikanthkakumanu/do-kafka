@@ -35,12 +35,14 @@ ext {
 
 dependencies {
     // This dependency is used by the application.
-    implementation 'com.google.guava:guava:30.1.1-jre'
-    implementation 'org.springframework.boot:spring-boot-starter-webflux'
-    implementation 'org.apache.kafka:kafka-streams'
-    implementation 'org.springframework.cloud:spring-cloud-stream'
-    implementation 'org.springframework.cloud:spring-cloud-stream-binder-kafka'
-    implementation 'org.springframework.cloud:spring-cloud-stream-binder-kafka-streams'
+//    implementation 'com.google.guava:guava:30.1.1-jre'
+    implementation 'org.springframework.boot:spring-boot-starter'
+
+//    implementation 'org.springframework.boot:spring-boot-starter-webflux'
+//    implementation 'org.apache.kafka:kafka-streams'
+//    implementation 'org.springframework.cloud:spring-cloud-stream'
+//    implementation 'org.springframework.cloud:spring-cloud-stream-binder-kafka'
+//    implementation 'org.springframework.cloud:spring-cloud-stream-binder-kafka-streams'
     implementation 'org.springframework.kafka:spring-kafka'
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
@@ -60,5 +62,5 @@ tasks.named("test") {
 
 application {
     // Define the main class for the application.
-    mainClass = 'src.App'
+    mainClass = 'com.srikanth.kafka.App'
 }
